@@ -1,0 +1,91 @@
+
+[
+  {
+    "event_id": "AUTH-001",
+    "timestamp": "2026-10-29T09:58:10Z",
+    "computer": "WS-FIN-023",
+    "username": "svc_backup",
+    "windows_event_id": 4625,
+    "logon_type": 3,
+    "source_ip": "198.51.100.23",
+    "status": "FAILURE",
+    "description": "Network logon failed"
+  },
+  {
+    "event_id": "AUTH-002",
+    "timestamp": "2026-10-29T09:58:42Z",
+    "computer": "WS-FIN-023",
+    "username": "svc_backup",
+    "windows_event_id": 4625,
+    "logon_type": 3,
+    "source_ip": "198.51.100.23",
+    "status": "FAILURE",
+    "description": "Network logon failed"
+  },
+  {
+    "event_id": "AUTH-003",
+    "timestamp": "2026-10-29T09:59:03Z",
+    "computer": "WS-FIN-023",
+    "username": "svc_backup",
+    "windows_event_id": 4625,
+    "logon_type": 3,
+    "source_ip": "198.51.100.23",
+    "status": "FAILURE",
+    "description": "Network logon failed"
+  },
+  {
+    "event_id": "AUTH-004",
+    "timestamp": "2026-10-29T09:59:28Z",
+    "computer": "WS-FIN-023",
+    "username": "svc_backup",
+    "windows_event_id": 4625,
+    "logon_type": 3,
+    "source_ip": "198.51.100.23",
+    "status": "FAILURE",
+    "description": "Network logon failed"
+  },
+  {
+    "event_id": "AUTH-005",
+    "timestamp": "2026-10-29T09:59:51Z",
+    "computer": "WS-FIN-023",
+    "username": "svc_backup",
+    "windows_event_id": 4625,
+    "logon_type": 3,
+    "source_ip": "198.51.100.23",
+    "status": "FAILURE",
+    "description": "Network logon failed"
+  },
+  {
+    "event_id": "AUTH-006",
+    "timestamp": "2026-10-29T10:00:16Z",
+    "computer": "WS-FIN-023",
+    "username": "svc_backup",
+    "windows_event_id": 4624,
+    "logon_type": 3,
+    "source_ip": "198.51.100.23",
+    "status": "SUCCESS",
+    "description": "Network logon succeeded"
+  },
+  {
+    "event_id": "AUTH-007",
+    "timestamp": "2026-10-29T10:00:18Z",
+    "computer": "WS-FIN-023",
+    "username": "svc_backup",
+    "windows_event_id": 4672,
+    "logon_type": 3,
+    "source_ip": "198.51.100.23",
+    "status": "PRIVILEGED",
+    "description": "Special privileges assigned to new logon"
+  },
+  {
+    "event_id": "AUTH-008",
+    "timestamp": "2026-10-29T10:05:42Z",
+    "computer": "WS-FIN-023",
+    "username": "analyst01",
+    "windows_event_id": 4624,
+    "logon_type": 2,
+    "source_ip": null,
+    "status": "SUCCESS",
+    "description": "Local interactive logon"
+  }
+]

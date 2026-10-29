@@ -1,0 +1,93 @@
+{
+  "report_title": "SOC Detective - Correlated Incident Finding Report",
+  "generated_at_utc": "2026-10-29T11:19:57.920711+00:00",
+  "case_id": "CASE-DAY4-001",
+  "environment": "Synthetic training environment",
+  "total_events_reviewed": 16,
+  "event_counts": {
+    "authentication": 8,
+    "process": 5,
+    "network": 3
+  },
+  "incident_count": 1,
+  "incidents": [
+    {
+      "incident_id": "INC-001",
+      "title": "Suspicious authentication with related endpoint/network activity",
+      "account": "svc_backup",
+      "host": "WS-FIN-023",
+      "source_ip": "198.51.100.23",
+      "successful_logon": "2026-10-29T10:00:16Z",
+      "authentication_alert": {
+        "rule_id": "AUTH-001",
+        "title": "Repeated failed logons followed by success",
+        "username": "svc_backup",
+        "source_ip": "198.51.100.23",
+        "computer": "WS-FIN-023",
+        "failed_attempts": 5,
+        "success_event_id": "AUTH-006",
+        "first_failure": "2026-10-29T09:58:10Z",
+        "successful_logon": "2026-10-29T10:00:16Z",
+        "severity": "HIGH",
+        "reason": "5 failed logons were followed by a successful logon for svc_backup from 198.51.100.23."
+      },
+      "related_process_count": 4,
+      "related_process_alert_count": 3,
+      "related_network_count": 2,
+      "evidence": [
+        {
+          "type": "authentication",
+          "event_id": "AUTH-006",
+          "detail": "5 failed logons preceded a successful logon for svc_backup."
+        },
+        {
+          "type": "process",
+          "event_id": "PROC-001",
+          "detail": "whoami.exe /all"
+        },
+        {
+          "type": "process",
+          "event_id": "PROC-002",
+          "detail": "ipconfig.exe /all"
+        },
+        {
+          "type": "process",
+          "event_id": "PROC-003",
+          "detail": "net.exe user"
+        },
+        {
+          "type": "process",
+          "event_id": "PROC-004",
+          "detail": "powershell.exe -NoProfile -Command \"Get-Service\""
+        },
+        {
+          "type": "network",
+          "event_id": "NET-001",
+          "detail": "Suricata telemetry: 192.0.2.45 -> 203.0.113.77:443"
+        },
+        {
+          "type": "network",
+          "event_id": "NET-002",
+          "detail": "Zeek telemetry: 192.0.2.45 -> 203.0.113.77:443"
+        }
+      ],
+      "assessment": "Suspicious sequence requiring analyst investigation. Correlation establishes temporal and host-level relationships, not proof of compromise or causation."
+    }
+  ],
+  "analyst_conclusion": "The synthetic evidence contains a suspicious authentication sequence with related endpoint and network activity. Further validation is required before declaring a confirmed compromise.",
+  "limitations": [
+    "All records are fictional and intended for training.",
+    "Correlation by host and time does not prove causation.",
+    "The authentication and network source IP addresses differ.",
+    "The rules are illustrative and are not production-tuned.",
+    "No live SIEM or endpoint collection system was queried."
+  ],
+  "recommended_next_steps": [
+    "Validate the account owner and whether the activity was expected.",
+    "Review original Windows and endpoint event records.",
+    "Verify network connections using trusted sensor data.",
+    "Check relevant account privileges and recent account changes.",
+    "Escalate according to the organisation's incident response process."
+  ],
+  "detection_alert_count": 4
+}

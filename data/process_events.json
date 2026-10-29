@@ -1,0 +1,68 @@
+
+[
+  {
+    "event_id": "PROC-001",
+    "timestamp": "2026-10-29T10:01:02Z",
+    "computer": "WS-FIN-023",
+    "username": "svc_backup",
+    "sysmon_event_id": 1,
+    "image": "C:\\Windows\\System32\\whoami.exe",
+    "parent_image": "C:\\Windows\\System32\\cmd.exe",
+    "command_line": "whoami.exe /all",
+    "process_id": 4120,
+    "parent_process_id": 3900,
+    "description": "Process created"
+  },
+  {
+    "event_id": "PROC-002",
+    "timestamp": "2026-10-29T10:02:15Z",
+    "computer": "WS-FIN-023",
+    "username": "svc_backup",
+    "sysmon_event_id": 1,
+    "image": "C:\\Windows\\System32\\ipconfig.exe",
+    "parent_image": "C:\\Windows\\System32\\cmd.exe",
+    "command_line": "ipconfig.exe /all",
+    "process_id": 4188,
+    "parent_process_id": 3900,
+    "description": "Process created"
+  },
+  {
+    "event_id": "PROC-003",
+    "timestamp": "2026-10-29T10:03:40Z",
+    "computer": "WS-FIN-023",
+    "username": "svc_backup",
+    "sysmon_event_id": 1,
+    "image": "C:\\Windows\\System32\\net.exe",
+    "parent_image": "C:\\Windows\\System32\\cmd.exe",
+    "command_line": "net.exe user",
+    "process_id": 4264,
+    "parent_process_id": 3900,
+    "description": "Process created"
+  },
+  {
+    "event_id": "PROC-004",
+    "timestamp": "2026-10-29T10:04:22Z",
+    "computer": "WS-FIN-023",
+    "username": "svc_backup",
+    "sysmon_event_id": 1,
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "parent_image": "C:\\Windows\\System32\\cmd.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Service\"",
+    "process_id": 4312,
+    "parent_process_id": 3900,
+    "description": "Process created"
+  },
+  {
+    "event_id": "PROC-005",
+    "timestamp": "2026-10-29T10:06:10Z",
+    "computer": "WS-FIN-023",
+    "username": "analyst01",
+    "sysmon_event_id": 1,
+    "image": "C:\\Windows\\System32\\notepad.exe",
+    "parent_image": "C:\\Windows\\explorer.exe",
+    "command_line": "notepad.exe",
+    "process_id": 5010,
+    "parent_process_id": 1500,
+    "description": "Normal-looking user process"
+  }
+]

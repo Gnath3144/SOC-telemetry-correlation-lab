@@ -1,0 +1,46 @@
+
+[
+  {
+    "event_id": "NET-001",
+    "timestamp": "2026-10-29T10:02:40Z",
+    "source": "Suricata",
+    "computer": "WS-FIN-023",
+    "src_ip": "192.0.2.45",
+    "dest_ip": "203.0.113.77",
+    "dest_port": 443,
+    "protocol": "TCP",
+    "alert_signature": "ET POLICY Simulated Unusual External Connection",
+    "severity": 2,
+    "category": "suspicious_connection",
+    "description": "Synthetic IDS alert for training"
+  },
+  {
+    "event_id": "NET-002",
+    "timestamp": "2026-10-29T10:03:05Z",
+    "source": "Zeek",
+    "computer": "WS-FIN-023",
+    "src_ip": "192.0.2.45",
+    "dest_ip": "203.0.113.77",
+    "dest_port": 443,
+    "protocol": "TCP",
+    "connection_state": "SF",
+    "duration_seconds": 12.4,
+    "bytes_sent": 18420,
+    "bytes_received": 3250,
+    "description": "Synthetic connection metadata"
+  },
+  {
+    "event_id": "NET-003",
+    "timestamp": "2026-10-29T10:04:10Z",
+    "source": "Suricata",
+    "computer": "WS-HR-008",
+    "src_ip": "192.0.2.88",
+    "dest_ip": "203.0.113.20",
+    "dest_port": 443,
+    "protocol": "TCP",
+    "alert_signature": "Simulated Routine HTTPS Connection",
+    "severity": 4,
+    "category": "informational",
+    "description": "Control event for comparison"
+  }
+]
